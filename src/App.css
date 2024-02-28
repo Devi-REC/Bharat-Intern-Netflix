@@ -1,0 +1,322 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  background-image: url('https://mavenanalytics.io/project/1985');
+  color: #fff;
+}
+.font_title{
+  font-size: 55px;
+}
+.font_1{
+  font-size: 40px;
+  color: #c2bbbb98;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 1%;
+  z-index: 10;
+}
+
+.navbar__brand {
+  width: 100px;
+  height: 100%;
+}
+
+.brand__logo {
+  width: 100%;
+  height: 100%;
+}
+.language__drop__down {
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+.language__drop__down:focus {
+  outline: none;
+}
+
+.language__drop__down option {
+  background-color: black;
+}
+
+.dropdown__container {
+  border: 1px solid white;
+  padding: 0.4rem;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.signin__button {
+  background-color: #dc030f;
+  border: 1px solid #dc030f;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.navbar__nav__items {
+  display: flex;
+  gap: 10px;
+}
+.cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #f9f1f1; /* Set minimum height to viewport height */
+}
+
+.content {
+  text-align: center; /* Center the text horizontally */
+}
+
+.tv-container {
+  margin-top: 20px; /* Adjust margin as needed */
+}.tv-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.tv-frame {
+  width: 600px; /* Set width of TV frame */
+  height: 400px; /* Set height of TV frame */
+  border: 20px solid #c2bbbb; /* Black border around the TV */
+  box-shadow: 0 0 20px rgba(234, 232, 232, 0.7); /* Shadow effect to simulate depth */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.feature__backgroud__video__container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.feature__backgroud__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire area of the video container */
+}
+
+.logo {
+  animation: flicker 3s infinite alternate;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+.cont::after {
+  content: "";
+  background-image: url('https://maven-uploads.s3.amazonaws.com/120386748/projects/netflix%20image.jpg');
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2; /* Adjust the opacity level for the overlay */
+  filter: brightness(2.5); /* Adjust the brightness level for the background image */
+}
+
+.container {
+  max-width: 1700px;
+
+  
+  background-image: url('https://mavenanalytics.io/project/1985');
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+input {
+  padding: 15px;
+  width: 300px;
+  border: 1px solid #f60303;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #aaaaaa6f;
+  color: #e50914;
+}
+
+button {
+  padding: 15px 20px;
+  background-color: #e50914;
+  color: #ece5e5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* styles.css */
+
+/* Other styles remain the same */
+
+.faq {
+  margin-top: 50px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  cursor: pointer;
+}
+
+.faq-item p {
+  display: none;
+}
+
+.faq-item p.show {
+  display: block;
+  margin-top: 10px;
+}
+/* styles.css */
+
+/* Other styles remain the same */
+/* styles.css */
+
+/* Other styles remain the same */
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-question h3 {
+  margin: 0;
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 10px;
+}
+
+.faq-answer.show {
+  display: block;
+}
+
+.faq-answer p {
+  margin: 0;
+}
+
+.faq-question button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: #222;
+  color: #aaa;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+
+.language {
+  margin-top: 10px;
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: #222;
+  color: #aaa;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.language {
+  margin-top: 10px;
+}
